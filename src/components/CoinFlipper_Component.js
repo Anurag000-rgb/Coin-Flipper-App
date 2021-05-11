@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import Sdata from './StorageComponents';
-import { random, set } from 'lodash';
+
 
 
 const Coin = (props) => {
@@ -11,16 +11,9 @@ const Coin = (props) => {
 
     let Random = Sdata[Math.floor(Math.random() * Sdata.length)]
 
-
-    
-
-
     const [head, setHead] = useState(0);
     const [tail, setTail] = useState(0);
 
-    
-
-    
 
     return(
         <Container>
@@ -55,19 +48,7 @@ const Container = styled.section`
     object-fit: cover;
 `;
 
-const BgImg = styled.div`
-    height: 100%;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("/images/login-background.jpeg");
-    top: 0;
-    right: 0;
-    left: 0;
-    position: absolute;
-    z-index: -1;
 
-`;
 
 const Wrap = styled.div`
     
