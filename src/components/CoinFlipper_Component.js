@@ -24,7 +24,7 @@ const Coin = (props) => {
 
                 <button onClick= {() => {
                     setNum(num+1)
-                    if(Random.id == 0) {
+                    if(Random.id === 0) {
                         setHead(head+1)
                     } else {
                         setTail(tail+1)
